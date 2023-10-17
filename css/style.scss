@@ -5,3 +5,47 @@
 @media screen and (min-width: 1280px) {
   @import 'desktop';
 }
+
+body {
+  background: black;
+}
+
+.page1 {
+  padding: 16px;
+}
+
+.page-title {
+  text-transform: uppercase;
+  h2 {
+    span:first-of-type {
+      font-size: 3.75rem;
+      color: green;
+    }
+    span:nth-of-type(2) {
+      color: purple;
+      font-size: 1.563rem;
+      position: relative;
+      top: -42px;
+      right: 114px;
+    }
+    span:nth-of-type(3) {
+      color: green;
+      font-size: 1.463rem;
+      position: relative;
+      top: 13px;
+      right: 321px;
+    }
+  }
+}
+
+.text {
+  color: green;
+  font-size: 1rem;
+  .text1{
+
+  }
+}
+
+.text2 {
+  background-color: white;
+}
