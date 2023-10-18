@@ -1,4 +1,9 @@
 @import 'vendor/normalize';
+* {
+
+  box-sizing: border-box;
+  
+  }
 
 @import 'mobile';
 
@@ -10,8 +15,14 @@ body {
   background: black;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 main {
-  //padding: 14px;
+  padding: 14px;
+  width: 100%;
   //border: 2px solid green;
 }
 
@@ -20,13 +31,13 @@ header {
 }
 
 .page1 {
-  min-height: calc(100vh - 50px);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  min-height: calc(100vh - 64px);
 }
 
 .page-title {
   text-transform: uppercase;
+  max-width: 100%;
+  overflow: hidden;
   h2 {
     span:first-of-type {
       font-size: 3.75rem;
@@ -84,4 +95,8 @@ header {
     left: 8px;
     margin: 0;
   }
+}
+
+.page2 {
+  color: white;
 }
