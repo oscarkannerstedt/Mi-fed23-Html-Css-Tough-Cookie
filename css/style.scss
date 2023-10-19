@@ -11,8 +11,11 @@
   @import 'desktop';
 }
 
+$yellow-color: rgba(255, 242, 54);
+$green-color: rgba(0, 255, 56);
+
 body {
-  background-color: black;
+  background-color: $yellow-color;
 }
 
 img {
@@ -38,6 +41,7 @@ header {
 .page1 {
   min-height: calc(100vh - 64px);
   font-family: 'jockey one', sans-serif;
+  background-color: black;
 }
 
 .page-title {
@@ -47,17 +51,17 @@ header {
   h2 {
     span:first-of-type {
       font-size: 3.75rem;
-      color: green;
+      color: $green-color;
     }
     span:nth-of-type(2) {
-      color: purple;
+      color: #ac76ff;
       font-size: 1.463rem;
       position: relative;
       top: -45px;
       right: 70px;
     }
     span:nth-of-type(3) {
-      color: green;
+      color: $yellow-color;
       font-size: 1.463rem;
       position: relative;
       top: 13px;
@@ -71,12 +75,12 @@ header {
 }
 
 .text1 {
-  color: green;
+  color: $green-color;
 }
 
 .text2 {
   background-color: white;
-  color: blue;
+  color: #ac76ff;
   a {
     color: black;
   }
@@ -104,7 +108,7 @@ header {
 
 .page2 {
   font-family: 'jockey one', sans-serif;
-  min-height: calc(100vh - 28px);
+  min-height: calc(100vh - 14px);
 }
 
 
@@ -115,7 +119,8 @@ header {
   width: 100%;
   .column {
     flex: 33.33%;
-    padding: 5px;
+    // padding: 5px;
+    margin: 5px;
     background-size: cover;
     background-position: center;
   }
@@ -139,6 +144,8 @@ header {
     color: black;
     text-align: center;
     font-size: 1rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 
     span:first-of-type {
       float: left;
