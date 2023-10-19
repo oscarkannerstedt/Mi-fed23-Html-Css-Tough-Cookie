@@ -12,7 +12,7 @@
 }
 
 body {
-  background: black;
+  background-color: black;
 }
 
 img {
@@ -23,15 +23,21 @@ img {
 main {
   padding: 14px;
   width: 100%;
-  //border: 2px solid green;
 }
 
 header {
   height: 50px;
+
+  h1 {
+    text-transform: uppercase;
+    font-family: 'jockey one', sans-serif;
+    font-size: 2rem;
+  }
 }
 
 .page1 {
   min-height: calc(100vh - 64px);
+  font-family: 'jockey one', sans-serif;
 }
 
 .page-title {
@@ -45,17 +51,17 @@ header {
     }
     span:nth-of-type(2) {
       color: purple;
-      font-size: 1.563rem;
+      font-size: 1.463rem;
       position: relative;
-      top: -42px;
-      right: 114px;
+      top: -45px;
+      right: 70px;
     }
     span:nth-of-type(3) {
       color: green;
       font-size: 1.463rem;
       position: relative;
       top: 13px;
-      right: 321px;
+      right: 205px;
     }
   }
 }
@@ -80,7 +86,6 @@ header {
   max-width: 300px;
   height: 30vh;
   max-height: 350px;
-  background-color: black;
 
   background-image: url(../assets/photos/mae-mu-hugb85v0J04-unsplash.jpg);
   background-size: cover;
@@ -98,5 +103,54 @@ header {
 }
 
 .page2 {
-  color: white;
+  font-family: 'jockey one', sans-serif;
+  min-height: calc(100vh - 28px);
+}
+
+
+.row {
+  display: flex;
+  height: 30vh;
+  max-height: 196.7px;
+  width: 100%;
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+  }
+  .image1 {
+    background-image: url(../assets/photos/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg);
+  }
+  .image2 {
+    background-image: url(../assets/photos/kao-rodriguez-IeTzHiuepmU-unsplash.jpg);
+  }
+  .image3 {
+    background-image: url(../assets/photos/mor-shani-kQloRmVQYIs-unsplash.jpg);
+  }
+}
+
+.lunch-menu {
+  
+  .menu-item {
+    margin-top: 10px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+
+    span:first-of-type {
+      float: left;
+      text-transform: uppercase;
+    }
+    span:nth-of-type(2) {
+      display: inline-block;
+      font-family: 'roboto', sans-serif;
+      font-size: 60%;
+    }
+    span:nth-of-type(3) {
+      float: right
+    }
+  }
 }
