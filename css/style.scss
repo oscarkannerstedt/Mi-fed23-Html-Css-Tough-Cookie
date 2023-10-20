@@ -18,6 +18,10 @@ body {
   background-color: $yellow-color;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -83,6 +87,12 @@ header {
   color: #ac76ff;
   a {
     color: black;
+    text-decoration: none;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
   }
 }
 
@@ -97,8 +107,7 @@ header {
 
   position: relative;
 
-  p {
-    color: white;
+  img {
     position: absolute;
     bottom: 8px;
     left: 8px;
