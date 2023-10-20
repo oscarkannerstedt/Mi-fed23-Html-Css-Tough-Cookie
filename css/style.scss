@@ -288,3 +288,49 @@ form {
     background-color: $green-color;
   }
 }
+
+.image-contact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  .image-contact {
+    background-image: url(../assets/photos/ronan-kruithof-PCE0T5i4pDI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 250px;
+    .image-overlay {
+      height: 250px;
+      width: 300px;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(1px); 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .contact-container {
+        text-align: center;
+        .contact-row {
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          color: rgba(172,118,255,255);
+          font-weight: bold;
+        }
+        span {
+          font-size: 2rem;
+          margin-right: 5px;
+        }
+        p {
+          font-size: 1.2rem;
+          margin: 0;
+        }
+        .adress {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  
+}
