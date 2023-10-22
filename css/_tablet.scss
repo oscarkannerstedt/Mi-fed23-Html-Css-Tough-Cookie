@@ -1,0 +1,40 @@
+body {
+    background-color: $green-color;
+}
+
+main {
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+
+header {
+    display: grid;
+}
+
+.page1 {
+    grid-column: span 11;
+    min-height: 100vh;
+    .top, .bottom {
+        display: grid;
+        gap:16px;
+        grid-template-columns: repeat(11, 1fr);
+    }
+    .top {
+        .page-title {
+            grid-column: span 4;
+        }
+        .text {
+            grid-column: span 7;
+        }
+    }
+    .bottom {
+        .image {
+            grid-column: span 5;
+        }
+        .text {
+            grid-column: span 6;
+        }
+    }
+}

@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Poppins:ital,wght@0,300;0,400;1,300&family=Rubik:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto+Condensed&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
@@ -15,7 +16,7 @@
 
     <input type="checkbox" class="checked-box">
     <header>
-      <button>
+      <button type="button">
         <span></span>
         <span></span>
         <span></span>
@@ -43,11 +44,11 @@
       <section class="bottom">
         <article class="text text2">
           <p>Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries roasted butternut squash basmati thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette heat mint potato chocolate cookie seeds samosa walnut mushroom tart.
-          <br><a href="#target">Explore menu <img src="./assets/icons/arrow2.svg" alt="Arrow that takes you down to the menu"></a>
+          <br><a href="#target">Explore menu <img src="./assets/icons/arrow2.svg" alt="Arrow that takes you down to the menu if you click" height="16" width="16" loading="lazy"></a>
           </p>
         </article>
         <div class="image">
-          <img src="assets/icons/arrow-199-24.ico" alt="Arrow that point down to next page">
+          <img src="assets/icons/arrow-199-24.ico" alt="Arrow that point down to next page" height="24" width="24" loading="lazy">
         </div>
       </section>
     </div>
@@ -80,32 +81,32 @@
 
           <label>
             <span>Name</span>
-            <input type="text" placeholder="">
+            <input type="text" name="name">
           </label>
 
           <label>
             <span>Email</span>
-            <input type="text" placeholder="">
+            <input type="email" name="email">
           </label>
 
           <label>
             <span>Phone</span>
-            <input type="text" placeholder="">
+            <input type="tel" name="Phone">
           </label>
 
           <label>
             <span>Date</span>
-            <input type="text" placeholder="">
+            <input type="datetime-local" name="datetime-local">
           </label>
 
           <label>
             <span>Party size</span>
-            <input type="text" placeholder="">
+            <input type="number" name="size">
           </label>
 
           <label>
             <span>Allergies</span>
-            <input type="text" placeholder="">
+            <input type="text" name="Allergies">
           </label>
 
           <input type="reset" value="Cancel">
@@ -117,15 +118,15 @@
           <div class="image-overlay">
             <div class="contact-container">
               <div class="contact-row">
-                <span>&#128222;</span>
+                <span class="material-symbols-outlined">call</span>
                 <p>+ 46 8 123 45 67</p>
               </div>
               <div class="contact-row">
-                <span>&#64;</span>
+                <span class="material-symbols-outlined">alternate_email</span>
                 <p>book@toughcookie.com</p>
               </div>
               <div class="contact-row">
-                <span>&#127968;</span>
+                <span class="material-symbols-outlined">location_on</span>
                 <div class="adress">
                   <p>Brända Tomten</p>
                   <p>111 31 Stockholm</p>
