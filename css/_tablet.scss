@@ -11,7 +11,6 @@ main {
 header {
     flex-direction: column;
     height: 100vh;
-    grid-row-end: span 5;
 }
 
 .page1 {
@@ -42,56 +41,57 @@ header {
         background-color: $yellow-color;
     
         .image {
-            grid-column: span 5;
-            height: 100%;
+            grid-column: 1 / span 5;
+            max-width: 440px;
+            max-height: 352px;
+        }
+        .text {
+            margin-right: 0;
+            margin-left: 0;
         }
         .text2 {
-            grid-column: span 6;
+            grid-column:  6 / span 6;
             font-size: 1.4rem;
-            position: absolute;
-            margin-left: 37%;
-            margin-right: 12px;
             height: 50vh;
+
+            p {
+                margin-top: 0;
+            }
         }
     }
 }
 
 .page2 {
-    grid-column: span 11;
-    
+    grid-column: 2 / span 11;
     .row {
         width: 100%;
     }
-
 }
 
 .page3 {
-    grid-column: span 11;
+    grid-column:  2 / span 11;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    .grid-container-page3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 18px;
-      }
-}
+    gap:16px;
+    grid-template-columns: repeat(11, 1fr);
+    margin-bottom: 100px;
+    form {
+        grid-column: 1 / span 4;
+    }
 
-form {
-    grid-column: 1;
-    
-}
+    .image-contact-container {
+        grid-column: 6 / span 6;
 
-.image-contact-container {
-    grid-column: 2;
-    width: 280px;
-    height: 300px;
-    margin-top: 5px;
-    .image-contact {
-        width: 280px;
-        height: 300px;
-        .image-overlay {
-            width: 280px;
-            height: 300px;
+        .image-contact {
+            width: 269px;
+            height: 276;
+            max-width: 388px;
+            max-height: 582px;
+            .image-overlay {
+                width: 269px;
+                height: 276px;
+                max-height: 582px;
+                max-width: 388px;
+            }
         }
     }
 }
