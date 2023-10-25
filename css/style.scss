@@ -30,7 +30,7 @@ main {
 }
 
 /*-------------------------------------*/
-/*-----------------Menu-------------*/
+/*-----------------Menu---------------*/
 /*-------------------------------------*/
 
 .checked-box {
@@ -329,6 +329,9 @@ form {
       border-radius: 10px;
       margin-left: 5px;
     }
+    input[type=date]:required:invalid::-webkit-datetime-edit {
+      color: transparent;
+  }
   }
   input[type="reset"],
   input[type="submit"] {
@@ -374,7 +377,7 @@ form {
           margin: 10px 0;
           color: rgb(170, 117, 255);
           font-weight: bold;
-          filter: drop-shadow(-2px -2px black);
+          filter: drop-shadow(-2px 0px black);
         }
         span {
           font-size: 2.5rem;
@@ -393,7 +396,7 @@ form {
 }
 
 /*-------------------------------------*/
-/*-----------------Cookie-Text-------------*/
+/*------------Cookie-Text-------------*/
 /*-------------------------------------*/
 
 footer {
@@ -430,13 +433,13 @@ footer {
 }
 
 /*-------------------------------------*/
-/*-------Import Tablet & Desktop-------*/
+/*-------Import Tablet & Desktop------*/
 /*-------------------------------------*/
 
 @media screen and (min-width: 640px) {
   @import 'tablet';
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
   @import 'desktop';
 }

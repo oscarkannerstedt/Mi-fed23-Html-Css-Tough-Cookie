@@ -1,37 +1,42 @@
-body {
-    background-color: yellow;
-}
+// body {
+//     background-color: yellow;
+// }
+
+
 
 main {
-    border: 2px solid green;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 16px;
+    // display: grid;
+    // grid-template-columns: repeat(12, 1fr);
+    gap: 18px;
+    padding-right: 18px;
 }
 
 header {
-    flex-direction: column;
+    // flex-direction: column;
+    // width: 50px;
 }
 
 .page1 {
-    grid-column: span 11;
-    min-height: 100vh;
+    // grid-column: span 11;
+    // min-height: 100vh;
     .top, .bottom {
-        display: grid;
-        gap:16px;
-        grid-template-columns: repeat(11, 1fr);
+        // display: grid;
+        gap:18px;
+        // grid-template-columns: repeat(11, 1fr);
     }
     .top {
         .page-title {
-            grid-column: span 4;
+            // grid-column: span 4;
         }
         .text {
-            grid-column: span 7;
+            // grid-column: span 7;
         }
     }
     .bottom {
         .image {
-            grid-column: 1 / span 5;
+            min-width: 100%;
+            min-height: 100%;
+            // grid-column: 1 / span 5;
             span {
                 transition: bottom .2s cubic-bezier(0.65, 0, 0.35, 1);
             }
@@ -40,7 +45,66 @@ header {
             bottom: 10px;
         }
         .text {
-            grid-column: 6 / span 6;
+            // grid-column: 6 / span 6;
         }
+    }
+}
+
+.page3 {
+    background-color: $green-color;
+    margin-bottom: 0;
+    margin-right: -18px;
+}
+
+form {
+    min-width: 300px;
+    min-height: 350px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+
+    h2 {
+        font-size: 2.7rem;
+    }
+    label span {
+        font-size: 1.5rem;
+    }
+    label input {
+        width: 190px;
+    }
+    input[type="submit"] {
+        background-color: rgb(253, 242, 54);
+      }
+}
+
+.image-contact {
+    min-width: 400px;
+    min-height: 400px;
+    margin-top: 30px;
+    .image-overlay {
+        min-width: 400px;
+        min-height: 400px;
+    }
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    .button-container {
+        position: absolute;
+        left: auto;
+        right: 0;
+        margin-right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        button {
+            margin-right: 10px;
+            width: 150px;
+            font-size: 1.3rem;
+        }
+    }
+    p {
+        position: absolute;
+        margin-left: 100px;
+        font-size: 1rem;
     }
 }

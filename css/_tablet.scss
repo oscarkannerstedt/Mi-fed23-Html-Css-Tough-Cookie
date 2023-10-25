@@ -1,12 +1,15 @@
 
 main {
-    // border: 2px solid green;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
     padding: 0;
     padding-right: 10px;
 }
+
+/*-------------------------------------*/
+/*-----------------Menu---------------*/
+/*-------------------------------------*/
 
 .checked-box {
     right: auto;
@@ -19,7 +22,7 @@ header {
     flex-direction: column;
     height: 100vh;
     justify-content: start;
-    width: 50px;
+    // width: 50px;
     button {
         position: static;
     }
@@ -31,6 +34,10 @@ header {
         margin-top: 15px;
     }
 }
+
+/*-------------------------------------*/
+/*-----------------Page 1-------------*/
+/*-------------------------------------*/
 
 .page1 {
     grid-column: span 11;
@@ -61,6 +68,8 @@ header {
     
         .image {
             grid-column: 1 / span 5;
+            min-height: 100%;
+            min-width: 100%;
             max-width: 440px;
             max-height: 352px;
             order: 1;
@@ -82,12 +91,20 @@ header {
     }
 }
 
+/*-------------------------------------*/
+/*-----------------Page 2-------------*/
+/*-------------------------------------*/
+
 .page2 {
     grid-column: 2 / span 11;
     .row {
         width: 100%;
     }
 }
+
+/*-------------------------------------*/
+/*-----------------Page 3-------------*/
+/*-------------------------------------*/
 
 .page3 {
     grid-column:  2 / span 11;
@@ -104,7 +121,7 @@ header {
 
         .image-contact {
             width: 269px;
-            height: 276;
+            height: 276px;
             max-width: 388px;
             max-height: 582px;
             .image-overlay {
