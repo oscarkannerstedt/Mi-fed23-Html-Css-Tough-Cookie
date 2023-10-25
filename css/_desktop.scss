@@ -31,10 +31,16 @@ header {
     }
     .bottom {
         .image {
-            grid-column: span 5;
+            grid-column: 1 / span 5;
+            span {
+                transition: bottom .2s cubic-bezier(0.65, 0, 0.35, 1);
+            }
+        }
+        .image:hover span {
+            bottom: 10px;
         }
         .text {
-            grid-column: span 6;
+            grid-column: 6 / span 6;
         }
     }
 }
