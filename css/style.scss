@@ -62,7 +62,7 @@ header {
     opacity: 0;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     visibility: hidden;
-    z-index: 3;
+    z-index: 4;
     ul {
       margin: 0;
       padding: 0;
@@ -217,7 +217,7 @@ input:checked + header button span:nth-child(3){
 .row {
   display: flex;
   height: 35vh;
-  max-height: 196.7px;
+  max-height: 198px;
   width: 100%;
   .column {
     flex: 33.33%;
@@ -322,16 +322,20 @@ form {
     margin-bottom: 10px;
     span {
       flex: 1;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
     input {
       border: 1px solid $yellow-color;
       border-radius: 10px;
       margin-left: 5px;
+      width: 190px;
     }
     input[type=date]:required:invalid::-webkit-datetime-edit {
       color: transparent;
   }
+  input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
   }
   input[type="reset"],
   input[type="submit"] {
@@ -401,6 +405,7 @@ form {
 
 footer {
   position: relative;
+  display: flex;
   bottom: 0;
   width: 100%;
   height: 50px;
@@ -410,11 +415,16 @@ footer {
     color: white;
     font-family: "roboto condensed",sans-serif;
     font-size: 0.8rem;
+    position: absolute;
+    margin-left: 30px;
   }
   .button-container {
     position: absolute;
-    bottom: 10px;
-    left: 60%;
+    left: auto;
+    right: 0;
+    margin-right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   button {
     width: 80px;
