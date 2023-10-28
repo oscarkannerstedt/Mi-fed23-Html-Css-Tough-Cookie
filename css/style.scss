@@ -1,12 +1,10 @@
 @import 'vendor/normalize';
+
 * {
 
   box-sizing: border-box;
-  
-  }
 
-@import 'mobile';
-
+}
 
 $yellow-color: rgba(255, 242, 54);
 $green-color: rgba(0, 255, 56);
@@ -47,22 +45,29 @@ header {
   height: 50px;
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: space-between;
+
   h1 {
     text-transform: uppercase;
     font-family: 'jockey one', sans-serif;
     font-size: 2rem;
+    margin: 0;
+    margin-left: 10px;
   }
+
   nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(172,118,255,255);
+    background-color: rgb(172, 118, 255, 255);
     width: 100vw;
     height: 100vh;
     opacity: 0;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     visibility: hidden;
     z-index: 4;
+
     ul {
       margin: 0;
       padding: 0;
@@ -74,6 +79,7 @@ header {
       text-align: center;
     }
   }
+
   button {
     width: 35px;
     height: 35px;
@@ -84,8 +90,9 @@ header {
     top: 20px;
     z-index: 5;
     pointer-events: none;
+
     span {
-      display:block;
+      display: block;
       width: 25px;
       height: 3px;
       background-color: $yellow-color;
@@ -95,22 +102,25 @@ header {
   }
 }
 
-input:checked + header nav {
+input:checked+header nav {
   visibility: visible;
   opacity: 1;
 }
 
-input:checked + header button span{
+input:checked+header button span {
   position: absolute;
   transition: all 0.3s ease-in-out;
 }
-input:checked + header button span:nth-child(2){
+
+input:checked+header button span:nth-child(2) {
   opacity: 0;
 }
-input:checked + header button span:nth-child(1){
+
+input:checked+header button span:nth-child(1) {
   transform: rotate(45deg);
 }
-input:checked + header button span:nth-child(3){
+
+input:checked+header button span:nth-child(3) {
   transform: rotate(-45deg);
 }
 
@@ -136,11 +146,13 @@ input:checked + header button span:nth-child(3){
   max-width: 100%;
   overflow: hidden;
   margin-left: 10px;
+
   h2 {
     span:first-of-type {
       font-size: 3.75rem;
       color: $green-color;
     }
+
     span:nth-of-type(2) {
       color: #ac76ff;
       font-size: 1.463rem;
@@ -148,6 +160,7 @@ input:checked + header button span:nth-child(3){
       top: -45px;
       right: 70px;
     }
+
     span:nth-of-type(3) {
       color: $yellow-color;
       font-size: 1.463rem;
@@ -171,6 +184,7 @@ input:checked + header button span:nth-child(3){
 .text2 {
   background-color: white;
   color: #ac76ff;
+
   a {
     color: black;
     text-decoration: none;
@@ -219,50 +233,60 @@ input:checked + header button span:nth-child(3){
   height: 35vh;
   max-height: 198px;
   width: 100%;
+
   .column {
     flex: 33.33%;
     margin: 5px;
     background-size: cover;
     background-position: center;
   }
+
   .image1 {
     background-image: url(../assets/photos/edgar-castrejon-1SPu0KT-Ejg-unsplash.jpg);
   }
+
   .image2 {
     background-image: url(../assets/photos/kao-rodriguez-IeTzHiuepmU-unsplash.jpg);
   }
+
   .image3 {
     background-image: url(../assets/photos/mor-shani-kQloRmVQYIs-unsplash.jpg);
   }
 }
 
 .lunch-menu {
-  
+
   .menu-item {
     margin-top: 10px;
     height: 40px;
     background-color: white;
     color: black;
-    text-align: center;
     font-size: 1rem;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    position: relative;
+
+    span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
     span:first-of-type {
-      float: left;
-      margin-left: 5px;
       text-transform: uppercase;
+      left: 3px;
     }
+
     span:nth-of-type(2) {
-      display: inline-block;
       font-family: 'roboto condensed', sans-serif;
       font-size: 0.6rem;
+      left: 43%;
     }
+
     span:nth-of-type(3) {
-      margin-left: auto;
-      float: right;
-      margin-right: 5px;
+      right: 3px;
     }
+
     .menu-item-new::after {
       content: "new!";
       display: inline-block;
@@ -273,8 +297,10 @@ input:checked + header button span:nth-child(3){
       background-color: blue;
       transform: rotate(3deg);
       margin-left: 5px;
-      margin-right: -5px;
+      top: 50%;
+      transform: translateY(-50%);
     }
+
     .menu-item-vegan::after {
       content: "vegan";
       display: inline-block;
@@ -285,8 +311,10 @@ input:checked + header button span:nth-child(3){
       background-color: $green-color;
       transform: rotate(-3deg);
       margin-left: 5px;
-      margin-right: -5px;
+      top: 50%;
+      transform: translateY(-50%);
     }
+
     .menu-item-popular::after {
       content: "Popular";
       display: inline-block;
@@ -296,7 +324,12 @@ input:checked + header button span:nth-child(3){
       font-family: 'Courier New', Courier, monospace;
       background-color: $yellow-color;
       margin-left: 5px;
-      margin-right: -5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .line-break {
+      right: 50px;
     }
   }
 }
@@ -305,38 +338,45 @@ input:checked + header button span:nth-child(3){
 /*-----------------Page 3-------------*/
 /*-------------------------------------*/
 
-form {  
+form {
   max-width: 300px;
   margin: 0 auto;
   font-family: 'jockey one', sans-serif;
+
   h2 {
     margin: 0;
     margin-bottom: 10px;
     margin-top: 5px;
     font-size: 2.3rem;
   }
+
   label {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
+
     span {
       flex: 1;
       font-size: 1.3rem;
     }
+
     input {
       border: 1px solid $yellow-color;
       border-radius: 10px;
       margin-left: 5px;
       width: 190px;
     }
+
     input[type=date]:required:invalid::-webkit-datetime-edit {
       color: transparent;
+    }
+
+    input[type=date]:focus::-webkit-datetime-edit {
+      color: black !important;
+    }
   }
-  input[type=date]:focus::-webkit-datetime-edit {
-    color: black !important;
-}
-  }
+
   input[type="reset"],
   input[type="submit"] {
     height: 25px;
@@ -345,9 +385,11 @@ form {
     border-radius: 10px;
     font-size: 1.3rem;
   }
+
   input[type="reset"] {
     background-color: rgb(170, 117, 255);
   }
+
   input[type="submit"] {
     background-color: $green-color;
   }
@@ -357,6 +399,7 @@ form {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+
   .image-contact {
     background-image: url(../assets/photos/ronan-kruithof-PCE0T5i4pDI-unsplash.jpg);
     background-size: cover;
@@ -364,17 +407,20 @@ form {
     margin-bottom: 20px;
     width: 300px;
     height: 250px;
+
     .image-overlay {
       height: 250px;
       width: 300px;
       position: absolute;
       background-color: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(1px); 
+      backdrop-filter: blur(1px);
       display: flex;
       justify-content: center;
       align-items: center;
+
       .contact-container {
         text-align: center;
+
         .contact-row {
           display: flex;
           align-items: center;
@@ -383,14 +429,17 @@ form {
           font-weight: bold;
           filter: drop-shadow(-2px 0px black);
         }
+
         span {
           font-size: 2.5rem;
           margin-right: 5px;
         }
+
         p {
           font-size: 1.3rem;
           margin: 0;
         }
+
         .adress {
           margin-bottom: 5px;
         }
@@ -409,15 +458,17 @@ footer {
   bottom: 0;
   width: 100%;
   height: 50px;
-  background-color: rgba(172,118,255,255);
+  background-color: rgba(172, 118, 255, 255);
   padding: 5px;
+
   p {
     color: white;
-    font-family: "roboto condensed",sans-serif;
+    font-family: "roboto condensed", sans-serif;
     font-size: 0.8rem;
     position: absolute;
     margin-left: 30px;
   }
+
   .button-container {
     position: absolute;
     left: auto;
@@ -426,6 +477,7 @@ footer {
     top: 50%;
     transform: translateY(-50%);
   }
+
   button {
     width: 80px;
     height: 25px;
@@ -434,9 +486,11 @@ footer {
     border: 1px;
     border-radius: 10px;
   }
+
   .cookie-button-decline {
     background-color: $yellow-color;
   }
+
   .cookie-button-accept {
     background-color: $green-color;
   }
