@@ -1,2 +1,17 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/Vn2OsCAg)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12399331&assignment_repo_type=AssignmentRepo)
+<h1>School assignment - Customer Project - Tough Cookie</h1>
+
+<p>Front End Developer student at Medieinstitutet</p>
+
+<h2>WHAT I USED</h2>
+
+<p>Built with:</p>
+<ul>
+  <li>Semantic HTML5 markup</li>
+  <li>CSS/SASS</li>
+  <li>Flexbox</li>
+  <li>Grid</li>
+</ul>
+
+<h2>AUTHOR</h2>
+<p>Oscar Kannerstedt - 2023</p>
+<p>Github: https://github.com/oscarkannerstedt</p>
