@@ -1,4 +1,4 @@
-<h1>School assignment - Customer Project - Tough Cookie</h1>
+<h1>School Assignment - Customer Project - Tough Cookie</h1>
 
 <p>Front End Developer student at Medieinstitutet</p>
 
